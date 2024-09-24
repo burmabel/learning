@@ -1,4 +1,184 @@
-//hello line 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Your Company</title>
+  <nav>
+        <a href="index.html">Home</a> <!-- Link to Home Page -->
+        <a href="about.html">About</a> <!-- Link to About Page -->
+        <a href="services.html">Services</a> <!-- Link to Services Page -->
+        <a href="contact-us.html">Contact</a> <!-- Link to Contact Page -->
+    </nav>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
 
-line 2 line
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            padding: 15px 20px;
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .banner {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://via.placeholder.com/1500x400');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            flex: 1;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-item h3 {
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+            }
+
+            .service-item {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Your Company</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <h2>Your Success, Our Commitment</h2>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>About Us</h2>
+        <p>
+            We are a leading company dedicated to delivering exceptional services to our clients. Our mission is to provide high-quality solutions that drive success and growth for businesses worldwide.
+        </p>
+
+        <!-- Services Section -->
+        <div class="services">
+            <div class="service-item">
+                <h3>Service 1</h3>
+                <p>
+                    We offer top-notch services to help you achieve your business goals.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3>Service 2</h3>
+                <p>
+                    Our team of experts is ready to provide the support and guidance you need.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3>Service 3</h3>
+                <p>
+                    We deliver innovative solutions that make a difference.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
